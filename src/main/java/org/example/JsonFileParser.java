@@ -140,7 +140,7 @@ public class JsonFileParser {
         Matcher simpleMatcher = simpleHeaderPattern.matcher(config);
         while (simpleMatcher.find()) {
             headersObject.put(simpleMatcher.group(1), simpleMatcher.group(2));
-        }
+        }//n
 
         return headersObject;
     }
